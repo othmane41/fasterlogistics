@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record model="ir.ui.view" id="cps_colisage_tree_view">
+        <field name="name">cps.colisage.tree</field>
+        <field name="model">cps.colisage</field>
+        <field name="arch" type="xml">
+            <tree name="Colis" editable="bottom">
+                <field name="type_colis" />
+                <field name="qte_colis" />
+            </tree>
+        </field>
+    </record>
+</odoo>

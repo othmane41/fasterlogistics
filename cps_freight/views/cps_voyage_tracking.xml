@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record model="ir.ui.view" id="cps_voyage_tracking_tree_view">
+        <field name="name">cps.voyage.tracking.tree</field>
+        <field name="model">cps.voyage.tracking</field>
+        <field name="arch" type="xml">
+            <tree name="Colis" editable="bottom">
+                <field name="date_tracking" />
+                <field name="description" />
+                <field name="duree" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>
