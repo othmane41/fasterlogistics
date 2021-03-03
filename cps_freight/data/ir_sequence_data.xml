@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<!-- Sequence for Freight Operation -->
+		<record id="seq_voyage"
+				model="ir.sequence">
+			<field name="name">Voyages</field>
+			<field name="code">cps.voyage</field>
+			<field name="prefix">VOY-</field>
+			<field name="padding">4</field>
+		</record>
+
+	</data>
+</odoo>

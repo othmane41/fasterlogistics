@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="fleet_vehicle_form">
+            <field name="name">fleet_vehicle_form</field>
+            <field name="model">fleet.vehicle</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+            <field name="arch" type="xml">
+                <field name="driver_id" position="before">
+                    <field name="soustraitant_id" context="{'default_is_soutraitant': True, 'default_is_company' : True}"/>
+                </field>
+            </field>
+        </record>
+
+         <record model="ir.actions.act_window" id="cps_vehicule_list_action">
+            <field name="name">Vehicules</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="res_model">fleet.vehicle</field>
+            <field name="domain">[('soustraitant_id', '=', False)]</field>
+        </record>
+
+         <record model="ir.actions.act_window" id="cps_vehicule_soustraitant_list_action">
+            <field name="name">Vehicules</field>
+            <field name="view_mode">kanban,tree,form</field>
+            <field name="res_model">fleet.vehicle</field>
+            <field name="domain">[('soustraitant_id', '!=', False)]</field>
+        </record>
+
+    </data>
+</odoo>

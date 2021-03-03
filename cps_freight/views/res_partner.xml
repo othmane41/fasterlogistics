@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="res_partner_form_view">
+        <field name="name">res.partner</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="vat" position="after">
+                <field name="classement" />
+                <field name="numero_rc" />
+                <field name="numero_ice" />
+                <field name="numero_if" />
+            </field>
+            <field name="category_id" position="after">
+                    <field name="numero_cnss" />
+                    <field name="numero_tp" />
+            </field>
+        </field>
+    </record>
+
+     <record model="ir.actions.act_window" id="cps_transitaire_list_action">
+		<field name="name">Transitaire</field>
+        <field name="view_mode">tree,kanban,form</field>
+		<field name="res_model">res.partner</field>
+        <field name="context">{'search_default_supplier': 1,'res_partner_search_mode': 'supplier', 'default_is_company': True, 'default_supplier_rank': 1, 'default_is_transitaire': 1}</field>
+        <field name="domain">[('is_transitaire', '=', True)]</field>
+	</record>
+
+     <record model="ir.actions.act_window" id="cps_compagnie_aerienne_list_action">
+		<field name="name">Compagnie aerienne</field>
+        <field name="view_mode">tree,kanban,form</field>
+		<field name="res_model">res.partner</field>
+        <field name="context">{'search_default_supplier': 1,'res_partner_search_mode': 'supplier', 'default_is_company': True, 'default_supplier_rank': 1, 'default_is_compagnie_aerienne': 1}</field>
+        <field name="domain">[('is_compagnie_aerienne', '=', True)]</field>
+	</record>
+
+     <record model="ir.actions.act_window" id="cps_compagnie_maritine_list_action">
+		<field name="name">Compagnie maritine</field>
+        <field name="view_mode">tree,kanban,form</field>
+		<field name="res_model">res.partner</field>
+        <field name="context">{'search_default_supplier': 1,'res_partner_search_mode': 'supplier', 'default_is_company': True, 'default_supplier_rank': 1, 'default_is_compagnie_maritine': 1}</field>
+        <field name="domain">[('is_compagnie_maritine', '=', True)]</field>
+	</record>
+
+     <record model="ir.actions.act_window" id="cps_compagnie_magasinage_list_action">
+		<field name="name">Compagnie magasinage</field>
+        <field name="view_mode">tree,kanban,form</field>
+		<field name="res_model">res.partner</field>
+        <field name="context">{'search_default_supplier': 1,'res_partner_search_mode': 'supplier', 'default_is_company': True, 'default_supplier_rank': 1, 'default_is_compagnie_magasinnage': 1}</field>
+        <field name="domain">[('is_compagnie_magasinnage', '=', True)]</field>
+	</record>
+
+     <record model="ir.actions.act_window" id="cps_soustraitant_list_action">
+		<field name="name">Sous traitant</field>
+        <field name="view_mode">tree,kanban,form</field>
+		<field name="res_model">res.partner</field>
+        <field name="context">{'search_default_supplier': 1,'res_partner_search_mode': 'supplier', 'default_is_company': True, 'default_supplier_rank': 1, 'default_is_soutraitant': 1}</field>
+        <field name="domain">[('is_soutraitant', '=', True)]</field>
+	</record>
+
+</odoo>
+

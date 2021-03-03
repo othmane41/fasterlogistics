@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="cps_trajet_form_view">
+        <field name="name">cps.trajet.form</field>
+        <field name="model">cps.trajet</field>
+        <field name="arch" type="xml">
+            <form string="Gestion des trajets">
+                <sheet>
+                    <group>
+                        <group name="left">
+                            <field name="lieu_ramassage"/>
+                            <field name="ville_ramassage"/>
+                        </group>
+                        <group name="right">
+                            <field name="lieu_livraison"/>
+                            <field name="ville_livraison"/>
+                            <field name="cout"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="partner_price_ids">
+                            <tree name="Fournisseurs" editable="bottom" >
+                                <field name="vehicule_sous_traitant_1"/>
+                                <field name="price"/>
+                            </tree>
+                        </field>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+	<record id="action_trajet" model="ir.actions.act_window">
+		<field name="name">Trajet</field>
+		<field name="res_model">cps.trajet</field>
+		<!-- <field name="view_type">form</field> -->
+		<field name="view_mode">tree,form</field>
+	</record>
+
+</odoo>
+

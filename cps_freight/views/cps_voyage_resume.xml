@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+     <record model="ir.ui.view" id="cps_voyage_resume_tree_view">
+        <field name="name">cps.voyage.resume.tree</field>
+        <field name="model">cps.voyage.resume</field>
+        <field name="arch" type="xml">
+            <tree name="Colis" editable="bottom">
+                <field name="client_id" />
+                <field name="type_prestataire" />
+                <field name="description" />
+                <field name="cout" />
+            </tree>
+        </field>
+    </record>
+
+</odoo>

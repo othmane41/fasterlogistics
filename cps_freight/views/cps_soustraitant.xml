@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="cps_soustraitant_form_view">
+        <field name="name">cps.soustraitant.form</field>
+        <field name="model">cps.soustraitant</field>
+        <field name="arch" type="xml">
+            <form string="Gestion des véhicules des sous traitants">
+                <sheet>
+                    <group>
+                        <group name="left">
+                            <field name="soustraitant_id" context="{'default_is_soutraitant': True,'search_default_supplier': 1,'res_partner_search_mode': 'supplier', 'default_is_company': True, 'default_supplier_rank': 1}"/>
+                        </group>
+                        <group name="right">
+                            <field name="vehicule_id"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>
+
