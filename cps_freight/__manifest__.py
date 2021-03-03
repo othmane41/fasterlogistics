@@ -7,18 +7,12 @@
     "sequence": 1,
     "category": "Transport",
     "license": 'LGPL-3',
-    "summary": """Freight Management System for Carriers, Transport,
-                  Goods Import/Export, Shipping and
-                  Transportation Solutions,
-                  Freight Management Software.""",
-    "description": """Freight Management System for Carriers, Transport,
-                      Goods Import/Export, Shipping and
-                      Transportation Solutions,
-                      Freight Management Software.""",
+    "summary": """Gestion de transport international.""",
+    "description": """Gestion de transport international.""",
 
     # Author
-    "author": "Serpent Consulting Services Pvt. Ltd.",
-    "website": "http://www.serpentcs.com",
+    "author": "Capital Project Strategies",
+    "website": "http://www.cpsmaroc.com",
 
     # Dependencies
     "depends": ['product', 'account'],
