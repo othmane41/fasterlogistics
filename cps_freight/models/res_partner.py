@@ -18,3 +18,9 @@ class ResPartner(models.Model):
     is_compagnie_maritine = fields.Boolean(string="Est une compagnie maritine")
     is_compagnie_magasinnage = fields.Boolean(string="Est une compagnie de magasinnage")
 
+    numero_ice = fields.Char('ICE')
+    numero_cnss = fields.Char('N° CNSS')
+    numero_rc = fields.Char('N° RC')
+    numero_if = fields.Char('N° IF')
+    numero_tp = fields.Char('N° TP')
+    classement = fields.Char('Classement')
