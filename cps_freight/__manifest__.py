@@ -2,7 +2,7 @@
 
 {
     # Module Info.
-    "name": "Freight Management",
+    "name": "Express Freight",
     "version": "13.0.1.0.0",
     "sequence": 1,
     "category": "Transport",
