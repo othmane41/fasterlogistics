@@ -3,7 +3,7 @@
 {
     # Module Info.
     "name": "Express Freight",
-    "version": "13.0.1.0.0",
+    "version": "13.0.0.0.0",
     "sequence": 1,
     "category": "Transport",
     "license": 'LGPL-3',
