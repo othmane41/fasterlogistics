@@ -8,7 +8,7 @@
     "category": "Transport",
     "license": 'LGPL-3',
     "summary": """Gestion de transport international.""",
-    "description": """Gestion de transport international.""",
+    "description": """Gestion de transport express international.""",
 
     # Author
     "author": "Capital Project Strategies",
