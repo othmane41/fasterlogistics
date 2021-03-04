@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 	<data>
-    	<menuitem id="root_menu_freight" name="Transport" sequence="1" web_icon="cps_freight,static/description/icon.png"/>
+    	<menuitem id="root_menu_freight" name="Express Freight" sequence="1" web_icon="cps_freight,static/description/icon.png"/>
 			<menuitem id="main_menu_freight_shipping" name="Livraisons"	parent="root_menu_freight"	sequence="1"/>
 				<menuitem id="freight_direct_shipping_menu"	name="Gestion livraisons"	parent="main_menu_freight_shipping" action="action_voyage" sequence="1"/>
 				<menuitem id="main_menu_vehicules" name="Parc vehicule" parent="main_menu_freight_shipping" action="cps_vehicule_list_action" sequence="2"/>
